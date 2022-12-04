@@ -10,6 +10,10 @@ const Ques = () => {
   const [current, setCurrent] = useState(0);
   const [sum, setSum] = useState(0);
 
+  const startGame = () => {
+    if (userName !== '') setStartTest(!startTest);
+  };
+
   const nextTest = (e) => {
     if (e.target.dataset.score !== undefined) {
       let score = parseInt(e.target.dataset.score);
@@ -91,19 +95,16 @@ const Ques = () => {
                 onChange={(event) => setUserName(event.target.value)}
               />
             </div>
-            <button onClick={() => setStartTest(!startTest)}>START</button>
+            <button onClick={() => startGame()}>START</button>
           </div>
         </>
       )}
       {startTest && !showResult && (
         <>
           {datas?.testDatas.map((test, idx) => (
-            <>
+            <div key={idx + 1}>
               {current === idx && (
-                <div
-                  className={`test_wrap ${current === idx && 'fade-in'}`}
-                  key={idx + 1}
-                >
+                <div className={`test_wrap ${current === idx && 'fade-in'}`}>
                   <div className="test_img">
                     <img src={`/${test.qusNum}.svg`} alt="" />
                   </div>
@@ -120,7 +121,7 @@ const Ques = () => {
                   </div>
                 </div>
               )}
-            </>
+            </div>
           ))}
         </>
       )}
