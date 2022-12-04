@@ -43,7 +43,7 @@ const Content = () => {
       </nav>
       <div className="do_test-link">
         <span>→ Let' GO!!!!</span>
-        <img src="/qrcode.svg" alt="" />
+        <img src="/code.svg" alt="" />
       </div>
     </main>
   );

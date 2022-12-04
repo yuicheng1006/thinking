@@ -106,7 +106,7 @@ const Ques = () => {
               {current === idx && (
                 <div className={`test_wrap ${current === idx && 'fade-in'}`}>
                   <div className="test_img">
-                    <img src={`/${test.qusNum}.svg`} alt="" />
+                    <img src={`/${test.qusNum}.png`} alt="" />
                   </div>
                   <div className="test_item">
                     <div className="item_num">{test.qusNum}</div>
@@ -129,7 +129,7 @@ const Ques = () => {
         <>
           <div className="test_wrap fade-in">
             <div className="test_img">
-              <img src={`/${resultImg}.svg`} alt="" />
+              <img src={`/${resultImg}.png`} alt="" />
             </div>
             <div className="test_item">
               <h4>

@@ -11,6 +11,7 @@ button {
   border: none;
   background: transparent;
   cursor: pointer;
+  color: #000;
 }
 #Qaq {
   display: flex;
@@ -91,11 +92,13 @@ button {
   }
   .sub01 {
     border-radius: 10px 0 0 10px;
-    height: 40%;
+    max-height: 315px;
+    height: 100%;
   }
   .sub02 {
     border-radius: 0 10px 10px 0;
-    height: 30%;
+    max-height: 235px;
+    height: 100%;
     border-left: 0;
   }
   h2 {
@@ -181,7 +184,7 @@ button {
 .name_wrap {
   margin-top: 20px;
   border-radius: 10px;
-  border: 2px solid;
+  border: 2px solid #000;
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -194,9 +197,10 @@ button {
     width: 100%;
     padding-top: 20px;
     border: 0;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #000;
     text-align: center;
     font-size: 16px;
+    border-radius: 0;
   }
   button {
     padding: 6px 20px;
@@ -204,7 +208,7 @@ button {
     margin: 40px auto 0 auto;
     width: 50%;
     background: #72f492;
-    border: 2px solid;
+    border: 2px solid #000;
   }
 }
 .test_wrap {
@@ -214,10 +218,14 @@ button {
   }
   .test_img {
     text-align: center;
+    img {
+      max-width: 223px;
+      width: 100%;
+    }
   }
   .test_item {
     position: relative;
-    border: 2px solid;
+    border: 2px solid #000;
     border-radius: 10px;
     padding: 30px;
     margin-top: 30px;
@@ -240,7 +248,7 @@ button {
   button {
     padding: 10px;
     width: 100%;
-    border: 2px solid;
+    border: 2px solid #000;
     border-radius: 10px;
     text-align: left;
     margin-bottom: 18px;
