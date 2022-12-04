@@ -61,7 +61,7 @@ button {
 #Qaq .m_wrap {
   width: 414px;
   min-height: 100vh;
-  border: 1px solid;
+  border: 1px solid #000;
   padding: 120px 20px 20px 20px;
   position: relative;
   background: #fff;
@@ -486,6 +486,7 @@ button {
 @media (max-width: 576px) {
   #Qaq .m_wrap {
     width: 100%;
+    border: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
