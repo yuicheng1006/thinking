@@ -15,6 +15,7 @@ const Ques = () => {
   };
 
   const nextTest = (e) => {
+    console.log('12');
     if (e.target.dataset.score !== undefined) {
       let score = parseInt(e.target.dataset.score);
       setSum(sum + score);
