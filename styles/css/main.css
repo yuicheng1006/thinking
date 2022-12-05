@@ -335,6 +335,7 @@ button {
   border-radius: 10px;
   text-align: left;
   margin-bottom: 18px;
+  text-align: justify;
 }
 
 .test_wrap h4 {
@@ -343,8 +344,8 @@ button {
 }
 
 .test_wrap .result {
-  white-space: pre-line;
   line-height: 2;
+  text-align: justify;
 }
 
 @-webkit-keyframes marquee {

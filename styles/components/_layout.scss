@@ -252,14 +252,15 @@ button {
     border-radius: 10px;
     text-align: left;
     margin-bottom: 18px;
+    text-align: justify;
   }
   h4 {
     font-weight: bolder;
     line-height: 2;
   }
   .result {
-    white-space: pre-line;
     line-height: 2;
+    text-align: justify;
   }
 }
 @keyframes marquee {
