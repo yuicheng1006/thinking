@@ -201,7 +201,7 @@ a:focus {
   display: flex;
   position: relative;
   transform: translate3d(var(--move-initial), 0, 0);
-  animation: marquee 12s linear infinite;
+  /* animation: marquee 25s linear infinite; */
   animation-play-state: paused;
   opacity: 0;
   transition: opacity 0.1s;
@@ -213,8 +213,11 @@ a:focus {
   transition-duration: 0.4s;
 }
 
-.marquee__inner.reversed {
-  animation: reverseMarquee 12s linear infinite;
+.marquee__inner.reversed span {
+  animation: reverseMarquee 10s linear infinite;
+}
+.marquee__inner span{
+  animation: marquee12 10s linear infinite;
 }
 
 .marquee span {
@@ -260,13 +263,22 @@ a:focus {
     transform: translate3d(var(--move-final), 0, 0);
   }
 }
-@keyframes reverseMarquee {
+@keyframes marquee12 {
+  0% {
+    transform: translate(0%,0);
+  }
+
   100% {
-    transform: translate3d(var(--move-initial), 0, 0);
+    transform: translate(-100%,0);
+  }
+}
+@keyframes reverseMarquee {
+   100% {
+    transform: translate(0%,0);
   }
 
   0% {
-    transform: translate3d(var(--move-final), 0, 0);
+    transform: translate(-100%,0);
   }
 }
 

@@ -32,7 +32,7 @@ const Content = () => {
         <div className="menu__item">
           <a className="menu__item-link">Life is a piece of shit</a>
           <div className="marquee">
-            <div className="marquee__inner" aria-hidden="true">
+            <div className="marquee__inner reverseded" aria-hidden="true">
               <span>Life is a piece of shit</span>
               <span>Life is a piece of shit</span>
               <span>Life is a piece of shit</span>
