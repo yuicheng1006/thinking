@@ -26,6 +26,7 @@ main {
   min-height: 100vh;
   overflow: hidden;
   background: #f8ecde;
+  position: relative;
 }
 main::before {
   animation: grain 8s steps(10) infinite;
@@ -137,6 +138,7 @@ a:focus {
   --move-final: calc(-50% + var(--offset));
   --item-font-size: 10vw;
   counter-reset: menu;
+  animation: fadein 0.5s ease-in;
 }
 
 .menu__item {
@@ -216,7 +218,7 @@ a:focus {
 .marquee__inner.reversed span {
   animation: reverseMarquee 10s linear infinite;
 }
-.marquee__inner span{
+.marquee__inner span {
   animation: marquee12 10s linear infinite;
 }
 
@@ -236,6 +238,14 @@ a:focus {
 
 .marquee span {
   font-style: italic;
+}
+
+.time_count {
+  font-size: 200px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .do_test-link {
@@ -265,20 +275,29 @@ a:focus {
 }
 @keyframes marquee12 {
   0% {
-    transform: translate(0%,0);
+    transform: translate(0%, 0);
   }
 
   100% {
-    transform: translate(-100%,0);
+    transform: translate(-100%, 0);
   }
 }
 @keyframes reverseMarquee {
-   100% {
-    transform: translate(0%,0);
+  100% {
+    transform: translate(0%, 0);
   }
 
   0% {
-    transform: translate(-100%,0);
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
